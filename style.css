@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0a0e17;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.relogio-caixa {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 40px 50px;
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.relogio {
+    display: flex;
+    gap: 30px;
+    color: #fff;
+}
+
+.tempo-selecionado {
+    text-align: center;
+}
+
+.tempo {
+    font-size: 4.5rem;
+    font-weight: 300;
+    background: linear-gradient(45deg, #9c1072, #00ffee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 15px rgba(0, 255, 238, 0.3);
+}
+
+.numero {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 8px;
+}
+
+.separador {
+    font-size: 4rem;
+    background: linear-gradient(45deg, #dfff6b, #6b2803);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
